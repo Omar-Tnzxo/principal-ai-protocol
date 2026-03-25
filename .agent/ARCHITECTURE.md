@@ -9,7 +9,7 @@
 Antigravity Kit is a modular system consisting of:
 
 - **20 Specialist Agents** - Role-based AI personas
-- **36 Skills** - Domain-specific knowledge modules
+- **37 Skills** - Domain-specific knowledge modules
 - **11 Workflows** - Slash command procedures
 
 ---
@@ -20,7 +20,7 @@ Antigravity Kit is a modular system consisting of:
 .agent/
 ├── ARCHITECTURE.md          # This file
 ├── agents/                  # 20 Specialist Agents
-├── skills/                  # 36 Skills
+├── skills/                  # 37 Skills
 ├── workflows/               # 11 Slash Commands
 ├── rules/                   # Global Rules
 └── scripts/                 # Master Validation Scripts
@@ -57,9 +57,9 @@ Specialist AI personas for different domains.
 
 ---
 
-## 🧩 Skills (36)
+## 🧩 Skills (37)
 
-Modular knowledge domains that agents can load on-demand. based on task context.
+Modular knowledge domains that agents can load on-demand based on task context.
 
 ### Frontend & UI
 
@@ -153,6 +153,12 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `bash-linux`         | Linux commands, scripting |
 | `powershell-windows` | Windows PowerShell        |
 
+### Agent Intelligence
+
+| Skill                | Description                        |
+| -------------------- | ---------------------------------- |
+| `intelligent-routing` | Automatic agent selection & routing |
+
 ### Other
 
 | Skill                     | Description               |
@@ -217,16 +223,18 @@ skill-name/
 
 ---
 
-## � Scripts (2)
+## 📜 Scripts (4)
 
-Master validation scripts that orchestrate skill-level scripts.
+Validation and utility scripts for project management.
 
-### Master Scripts
+### Scripts
 
-| Script          | Purpose                                 | When to Use              |
-| --------------- | --------------------------------------- | ------------------------ |
-| `checklist.py`  | Priority-based validation (Core checks) | Development, pre-commit  |
-| `verify_all.py` | Comprehensive verification (All checks) | Pre-deployment, releases |
+| Script               | Purpose                                    | When to Use              |
+| -------------------- | ------------------------------------------ | ------------------------ |
+| `checklist.py`       | Priority-based validation (Core checks)    | Development, pre-commit  |
+| `verify_all.py`      | Comprehensive verification (All checks)    | Pre-deployment, releases |
+| `auto_preview.py`    | Dev server management (start/stop/status)  | Local development        |
+| `session_manager.py` | Project state analysis & tech stack detect | Session start, status    |
 
 ### Usage
 
@@ -267,9 +275,9 @@ For details, see [scripts/README.md](scripts/README.md)
 | Metric              | Value                         |
 | ------------------- | ----------------------------- |
 | **Total Agents**    | 20                            |
-| **Total Skills**    | 36                            |
+| **Total Skills**    | 37                            |
 | **Total Workflows** | 11                            |
-| **Total Scripts**   | 2 (master) + 18 (skill-level) |
+| **Total Scripts**   | 4 (master) + 18 (skill-level) |
 | **Coverage**        | ~90% web/mobile development   |
 
 ---

@@ -1,5 +1,10 @@
 # Master Engineering Protocol (MEP v8.0) 🧠
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Omar-Tnzxo/principal-ai-protocol?style=social)](https://github.com/Omar-Tnzxo/principal-ai-protocol)
+
+> 🌍 **[النسخة العربية | Arabic Version](README-ar.MD)**
+
 ## Transform any AI — from the weakest to the strongest — into a strict, honest engineer.
 
 ## 🤔 The Problem
@@ -100,16 +105,36 @@ We merged the **safety and engineering rigor of MEP** with the **automated workf
 
 **ALL in one folder. One mention. Zero guessing. 58 problems covered.**
 
-## 🚀 How to Use
+## 🚀 Installation & Setup
 
-### Installation
-```text
-1. Run `npx @vudovn/ag-kit init` in your project root.
-2. The complete monolithic protocol is inside `.agent/`. 
-3. No configuration needed.
-```
+To implement the **Pointer Architecture** (which avoids context pollution and fits 19,000+ characters into small AI context windows), follow these steps:
 
-### Usage
+### 1. Global Setup (Antigravity Only)
+Create or update your global rules file to act as a **Pointer**. This ensures the AI always looks for project-specific rules first.
+- **Path:** `~/.gemini/GEMINI.md` (or `C:\Users\<YourUser>\.gemini\GEMINI.md`)
+- **Content:** Copy the small Pointer block that tells the AI to read `.agent/RULES.MD` in the current workspace.
+
+### 2. Project Setup
+Place the Master Protocol and the Local Trigger inside your project:
+- **Master Rules:** `.agent/RULES.MD` (Contains the full 19k+ char protocol).
+- **Local Pointer:** `.agent/rules/GEMINI.md` (Set to `trigger: always_on`).
+
+### 3. Verification
+Open a new conversation. The AI should automatically call `view_file` on `.agent/RULES.MD` without you mentioning it.
+
+---
+
+## 📁 Core Rule Files (The Trinity)
+
+| File | Location | Purpose |
+|------|----------|---------|
+| **Global Pointer** | `~/.gemini/GEMINI.md` | The Entry Point. Tells the AI to search for project rules. |
+| **Local Pointer** | `.agent/rules/GEMINI.md` | The Trigger. Auto-loads the protocol for Cursor/Windsurf. |
+| **The Master** | `.agent/RULES.MD` | The Source of Truth. The full MEP v8.0 ruleset. |
+
+---
+
+## 🚀 Usage Guide
 
 **Cursor / Windsurf (auto-loaded, zero mentions):**
 ```text
@@ -168,7 +193,7 @@ The protocol automatically adapts to your situation:
 | Context Management | 🟡 | Forgetting during long conversations |
 | Git Discipline | 🔵 | Messy commits |
 
-## 🔑 The 15 Iron Rules
+## 🔑 The 16 Iron Rules
 
 | # | Rule | Priority |
 |---|------|----------|
@@ -185,8 +210,9 @@ The protocol automatically adapts to your situation:
 | 11 | Don't mix patterns — follow or refactor | 🟡 |
 | 12 | Don't forget edge cases | 🟡 |
 | 13 | Don't add deps without justification | 🟡 |
-| 14 | Don't edit files blindly | 🟡 |
+| 14 | Don't edit files blindly — check related files | 🟡 |
 | 15 | Don't touch DB without thinking about existing data | 🟡 |
+| 16 | Don't trust documentation numbers — count and verify yourself | 🔴 |
 
 ## 👨‍💻 Vibe Coder's Guide — Your Role in the System
 
