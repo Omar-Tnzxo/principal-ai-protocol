@@ -9,6 +9,13 @@
 
 ## حوّل أي ذكاء اصطناعي (AI) — من الأضعف للأقوى — إلى مهندس صارم وصادق.
 
+> [!IMPORTANT]
+> ### 🤖 تعليمات لمساعد الذكاء الاصطناعي (AI Agent)
+> إذا كنت مساعداً ذكياً تدخل هذا المستودع لأول مرة:
+> 1. **اقرأ أولاً:** يجب عليك قراءة `.agent/RULES.MD` فوراً؛ فهو يمثل دستورك وقواعد اشتباكك هنا.
+> 2. **حلل قبل التنفيذ:** التزم بـ "بوابة سكرات" (`Socratic Gate`)؛ لا تعدل أي كود إلا بعد التشخيص وطلب الإذن.
+> 3. **تحدث بوضوح:** عند اقتراح تعديلات، استخدم لغة هندسية دقيقة وقم بلف المصطلحات الإنجليزية بـ (backticks) مثل `` `this` ``.
+
 ## 🤔 المشكلة
 
 إذا كنت تعتمد على الذكاء الاصطناعي في البرمجة كـ **Vibe Coder**، فمساعدك يقوم بالآتي:
@@ -65,7 +72,32 @@
 ### 1. الإعداد العالمي (للـ Antigravity فقط)
 قم بإنشاء أو تحديث ملف القواعد العالمي ليعمل كـ **مؤشر (Pointer)**. هذا يجعل الذكاء الاصطناعي يبحث دائماً عن قواعد المشروع أولاً.
 * **المسار:** `C:\Users\<اسم_المستخدم>\.gemini\GEMINI.md`
-* **المحتوى:** ضع كود "الموجه" الصغير الذي يطلب من الآي جينت قراءة ملف `.agent/RULES.MD` الداخلي.
+* **المحتوى:** انسخ النص التالي وضعه داخل ملف `GEMINI.md`:
+
+```markdown
+---
+trigger: always_on
+---
+
+# ANTIGRAVITY GLOBAL POINTER (MEP v8.0) 🧠
+
+> **IDENTITY:** You are a Principal Software Engineer (15+ yrs). You do NOT act as a standard assistant. You operate under absolute strict engineering protocols.
+
+## 🔴 CRITICAL DIRECTIVE: THE PROJECT RULES
+Due to UI character limits, the full Master Engineering Protocol (19,000+ characters) is NOT stored here. It is physically located inside every project at:
+`[PROJECT_ROOT]/.agent/RULES.MD`
+
+**YOUR MANDATORY FIRST STEP IN ANY NEW CONVERSATION:**
+1. Check if the file `.agent/RULES.MD` exists in the user's current workspace.
+2. If it exists, you MUST silently `view_file` it first.
+3. You MUST 100% strictly comply with every rule inside that file (Socratic Gate, Anti-Hallucination, Self-Grading formatting, Minimum Findings, etc.).
+4. NEVER assume the rules. Read them.
+
+**LANGUAGE CONSISTENCY:**
+If writing in Arabic, ALWAYS wrap english words/filenames in backticks (`like_this`) to avoid RTL markdown corruption.
+
+*(Proceed to answer the user AFTER checking for .agent/RULES.MD)*
+```
 
 ### 2. إعداد المشروع
 ضع "الدستور" والمشغل التلقائي داخل مجلد مشروعك:
@@ -88,6 +120,37 @@
 ---
 
 ## 🚀 الاستخدام الفعلي (Usage)
+
+### دليل الـ Vibe Coder — دورك في المنظومة 👨‍💻
+
+> مجلد `.agent` يتحكم في الذكاء الاصطناعي. هذا القسم يتحكم في **أنت**. أنت تمثل 50% من هذه المعادلة البرمجية.
+
+#### كيف تكتب "برومبتات" (Prompts) أفضل:
+
+| ❌ طلب سيء | ✅ طلب جيد |
+|--------------|---------------|
+| "أصلح التطبيق" | "زر تسجيل الدخول في صفحة /dashboard يعيد خطأ 500. أصلحه." |
+| "أضف ميزة البحث" | "أضف شريط بحث في صفحة المنتجات يقوم بالفلترة حسب اسم المنتج." |
+| "اجعل الكود أفضل" | "صفحة الطلبات بطيئة، تستغرق 5 ثوانٍ لتحميل 100 طلب. قم بتحسين الأداء." |
+| "ابنِ الباك إند" | "أنشئ مسار API من نوع POST باسم /api/orders يقوم بالتحقق من المدخلات وحفظها في جدول الطلبات." |
+
+**قواعد كتابة الطلبات:**
+1. **كن محدداً:** أي صفحة؟ أي ميزة؟ أي خطأ؟ 
+2. **مهمة واحدة لكل طلب:** لا تطلب 5 أشياء دفعة واحدة.
+3. **أعطِ سياقاً:** "هذه الصفحة تحتوي بالفعل على X، أريد إضافة Y."
+4. **أشر لمجموعة القواعد:** إذا كنت تستخدم واجهة ويب (ChatGPT/Claude)، ابدأ طلبك دائماً بـ `@.agent/RULES.MD`.
+
+#### كيف تكتشف "هلوّسة" الذكاء الاصطناعي (حتى لو لم تكن مبرمجاً):
+
+راقب هذه العلامات الحمراء:
+| 🚩 علامة حمراء | ماذا تعني |
+|-------------|---------------|
+| الـ AI لا يظهر قائمة التحقق 🔁 (`Verification Checklist`) | لقد تخطى مرحلة المراجعة الذاتية المهمة. |
+| الـ AI لا يعلن عن نوع المهندس المتخصص (`🤖 Applying...`) | لقد كسر بروتوكول التوجيه التلقائي. |
+| الـ AI يوافق على كل شيء فوراً | القواعد تقول إنه يجب أن ينتقد الأفكار الخاطئة. |
+| أسماء الملفات أو المسارات تبدو غير مألوفة | قد تكون هذه أسماء "مخترعة" (هلوسة). |
+
+---
 
 ## 📋 ماذا يوجد داخل RULES.MD (21 قسماً)
 
